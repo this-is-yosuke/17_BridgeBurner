@@ -1,4 +1,4 @@
-import { Schema, Types, model, type Document } from 'mongoose';
+import { Schema, model, type Document } from 'mongoose';
 
 interface IUser extends Document {
     username: string,
@@ -36,11 +36,18 @@ const userSchema = new Schema<IUser>({
 },
 {
     toJSON: {
+        virtuals: true,
         getters: true,
     },
     timestamps: true,
 }
 );
+
+
+// Creating a virtual property friendCount
+userSchema.virtual('friendCount').get(function () {
+    return this.friends?.length;
+});
 
 const User = model('User', userSchema);
 
