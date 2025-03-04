@@ -21,7 +21,7 @@ You can download the repo here: https://github.com/this-is-yosuke/17_BridgeBurne
 
 ## 2. Usage
 
-This application uses React.js, Typescript, Sequelize, and Vite For security, it uses bcrypt and jsonwebtoken packages. You can find a recording of how to use the app here: [BridgeBurner](https://drive.google.com/file/d/1p9i5vV_oc-74cxRJGXo0BKKQymopwVmQ/view). This screenshot shows the app's appearance: ![17_BridgeBurner](/src/assets/17_Screenshot.png)
+This application uses Typescript, Express, and Mongoose packages to utilize a NoSQL database. You can find a recording of how to use the app here: [BridgeBurner](https://drive.google.com/file/d/1p9i5vV_oc-74cxRJGXo0BKKQymopwVmQ/view). This screenshot shows the app's appearance: ![17_BridgeBurner](/src/assets/17_Screenshot.png)
 
 ## 3. License
 
